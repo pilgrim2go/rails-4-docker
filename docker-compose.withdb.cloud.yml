@@ -1,0 +1,19 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.002
+    image: 'railsapp:withdb'
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/usr/src/app
+    environment:
+      REDIS_HOST: redis
+    env_file:
+      - .env/cloud/database
+      - .env/cloud/web      
+  redis:
+    image: redis
+
