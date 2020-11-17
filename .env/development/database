@@ -1,0 +1,11 @@
+POSTGRES_PASSWORD=exxample
+POSTGRES_USER=postgres
+POSTGRES_DB=myapp_dev
+
+APP_PASSWORD=exxample
+APP_USER=myapp_user
+APP_DB=myapp_dev
+
+
+
+
